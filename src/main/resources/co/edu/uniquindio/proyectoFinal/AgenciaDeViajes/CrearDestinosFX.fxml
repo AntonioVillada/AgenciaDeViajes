@@ -21,7 +21,7 @@
          <children>
             <VBox alignment="CENTER" prefHeight="720.0" prefWidth="640.0" spacing="20.0">
                <children>
-                  <Label style="-fx-text-fill: white; -fx-font-size: 18;" text="Imágenes Representativas" />
+                  <Label style="-fx-text-fill: white; -fx-font-size: 25;" text="Imágenes Representativas" />
                   <GridPane hgap="10" prefHeight="587.0" prefWidth="533.0" vgap="10">
                      <columnConstraints>
                         <ColumnConstraints hgrow="ALWAYS" maxWidth="341.0" minWidth="267.0" prefWidth="270.0" />
@@ -36,7 +36,7 @@
                         <VBox prefHeight="210.0" prefWidth="295.0" spacing="5">
                            <children>
                               <ImageView cacheHint="QUALITY" fitHeight="150.0" fitWidth="268.0" pickOnBounds="true" preserveRatio="true" />
-                              <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" text="imagen 1" textAlignment="CENTER">
+                              <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" text="imagen 1" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS" underline="true">
                                  <VBox.margin>
                                     <Insets left="90.0" />
                                  </VBox.margin>
@@ -45,7 +45,7 @@
                         <VBox spacing="5" GridPane.rowIndex="1">
                            <children>
                               <ImageView fitHeight="150.0" fitWidth="268.0" pickOnBounds="true" preserveRatio="true" />
-                              <Button mnemonicParsing="false" text="Button">
+                              <Button mnemonicParsing="false" text="Button" textOverrun="CENTER_WORD_ELLIPSIS" underline="true">
                                  <VBox.margin>
                                     <Insets left="90.0" />
                                  </VBox.margin>
@@ -54,7 +54,7 @@
                         <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
                            <children>
                               <ImageView fitHeight="150.0" fitWidth="268.0" pickOnBounds="true" preserveRatio="true" />
-                              <Button mnemonicParsing="false" text="Button">
+                              <Button mnemonicParsing="false" text="Button" textOverrun="CENTER_WORD_ELLIPSIS" underline="true">
                                  <VBox.margin>
                                     <Insets left="90.0" />
                                  </VBox.margin>
@@ -64,7 +64,7 @@
                         <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
                            <children>
                               <ImageView fitHeight="150.0" fitWidth="268.0" pickOnBounds="true" preserveRatio="true" />
-                              <Button mnemonicParsing="false" text="Button">
+                              <Button mnemonicParsing="false" text="Button" textOverrun="CENTER_WORD_ELLIPSIS" underline="true">
                                  <VBox.margin>
                                     <Insets left="90.0" />
                                  </VBox.margin>
@@ -74,7 +74,7 @@
                         <VBox prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="2">
                            <children>
                               <ImageView fitHeight="150.0" fitWidth="268.0" pickOnBounds="true" preserveRatio="true" />
-                              <Button mnemonicParsing="false" text="Button">
+                              <Button mnemonicParsing="false" text="Button" textOverrun="CENTER_WORD_ELLIPSIS" underline="true">
                                  <VBox.margin>
                                     <Insets left="90.0" />
                                  </VBox.margin>
@@ -84,7 +84,7 @@
                         <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
                            <children>
                               <ImageView fitHeight="150.0" fitWidth="268.0" pickOnBounds="true" preserveRatio="true" />
-                              <Button mnemonicParsing="false" text="Button">
+                              <Button mnemonicParsing="false" text="Button" textOverrun="CENTER_WORD_ELLIPSIS" underline="true">
                                  <VBox.margin>
                                     <Insets left="90.0" />
                                  </VBox.margin>
@@ -104,7 +104,14 @@
                   <Label style="-fx-text-fill: white; -fx-font-size: 24;" text="Crear/Editar Destino" />
                   <TextField maxWidth="400.0" minWidth="-Infinity" promptText="Nombre" style="-fx-font-size: 18;" />
                   <TextField maxWidth="400.0" minWidth="-Infinity" promptText="Ciudad" style="-fx-font-size: 18;" />
-                  <Label style="-fx-text-fill: white; -fx-font-size: 18;" text="Descripción" />
+                  <MenuButton mnemonicParsing="false" prefHeight="39.0" prefWidth="404.0" text="Clima">
+                    <items>
+                      <MenuItem onAction="#seleccionarPrimavera" text="Primavera" />
+            		  <MenuItem onAction="#seleccionarVerano" text="Verano" />
+            		  <MenuItem onAction="#seleccionarOtono" text="Otoño" />
+                      <MenuItem onAction="#seleccionarInvierno" text="Invierno" />
+                    </items>
+                  </MenuButton>
                   <TextArea maxWidth="500.0" minHeight="100" minWidth="-Infinity" prefHeight="500.0" prefWidth="667.0" promptText="Descripción detallada del destino" style="-fx-font-size: 18; -fx-pref-height: 100;">
                      <opaqueInsets>
                         <Insets left="30.0" />
@@ -117,6 +124,8 @@
                      <children>
                         <Button style="-fx-background-color: #2ecc71; -fx-text-fill: white; -fx-font-size: 18;" text="Guardar" />
                         <Button style="-fx-background-color: #e74c3c; -fx-text-fill: white; -fx-font-size: 18;" text="Cancelar" />
+                        <Button style="-fx-background-color: #2ecc71; -fx-text-fill: white; -fx-font-size: 18;" text="Actualizar" />
+                        <Button style="-fx-background-color: #e74c3c; -fx-text-fill: white; -fx-font-size: 18;" text="Blorrar" />
                      </children>
                   </HBox>
                </children>

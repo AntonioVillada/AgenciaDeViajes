@@ -21,36 +21,25 @@
          <children>
             <VBox alignment="CENTER" prefHeight="720.0" prefWidth="640.0" spacing="20.0">
                <children>
-                  <Label style="-fx-text-fill: white; -fx-font-size: 18;" text="Información del Guía Turístico" />
-                  <GridPane hgap="10" prefHeight="587.0" prefWidth="533.0" vgap="10">
-                     <columnConstraints>
-                        <ColumnConstraints hgrow="ALWAYS" maxWidth="341.0" minWidth="267.0" prefWidth="270.0" />
-                        <ColumnConstraints hgrow="ALWAYS" maxWidth="268.0" minWidth="202.0" prefWidth="253.0" />
-                     </columnConstraints>
-                     <rowConstraints>
-                        <RowConstraints maxHeight="275.0" minHeight="185.0" prefHeight="185.0" vgrow="ALWAYS" />
-                        <RowConstraints maxHeight="222.0" minHeight="35.0" prefHeight="183.0" vgrow="ALWAYS" />
-                        <RowConstraints maxHeight="322.0" minHeight="108.0" prefHeight="174.0" vgrow="ALWAYS" />
-                     </rowConstraints>
+                  <Label style="-fx-text-fill: white; -fx-font-size: 26;" text="Información del Guía Turístico" />
+                  <HBox prefHeight="533.0" prefWidth="640.0">
                      <children>
-                        <!-- Actualiza las etiquetas y botones según la información del guía turístico -->
-                        <VBox prefHeight="210.0" prefWidth="295.0" spacing="5">
+                        <VBox prefHeight="200.0" prefWidth="100.0" />
+                        <VBox prefHeight="533.0" prefWidth="585.0">
                            <children>
-                              <ImageView cacheHint="QUALITY" fitHeight="150.0" fitWidth="268.0" pickOnBounds="true" preserveRatio="true" />
-                              <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" text="Ver Detalles" textAlignment="CENTER">
-                                 <VBox.margin>
-                                    <Insets left="90.0" />
-                                 </VBox.margin>
-                              </Button>
+                              <TableView prefHeight="537.0" prefWidth="537.0">
+                                <columns>
+                                  <TableColumn prefWidth="135.0" text="Identificacion" />
+                                  <TableColumn minWidth="3.0" prefWidth="118.0" text="Nombre " />
+                                    <TableColumn minWidth="3.0" prefWidth="135.0" text="Lenguajes" />
+                                    <TableColumn minWidth="3.0" prefWidth="148.0" text="Experiencia " />
+                                </columns>
+                              </TableView>
                            </children>
                         </VBox>
-                        <!-- Agrega más VBoxes para información adicional del guía turístico -->
-
+                        <VBox prefHeight="200.0" prefWidth="100.0" />
                      </children>
-                     <VBox.margin>
-                        <Insets left="10.0" right="10.0" />
-                     </VBox.margin>
-                  </GridPane>
+                  </HBox>
                </children>
             </VBox>
             <VBox alignment="CENTER" prefHeight="720.0" prefWidth="640.0" spacing="20.0">
