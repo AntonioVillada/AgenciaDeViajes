@@ -1,0 +1,17 @@
+<!-- VentanaPrincipal.fxml -->
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.Scene?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" spacing="10" fx:controller="your.package.name.VentanaPrincipalController"
+      fx:id="ventanaPrincipal" prefWidth="400" prefHeight="300"
+      style="-fx-background-color: #3498db;">
+
+    <Button text="Crear Cliente" onAction="#handleCrearCliente" />
+    <Button text="Crear Destino" onAction="#handleCrearDestino" />
+    <Button text="Crear Guía" onAction="#handleCrearGuia" />
+    <Button text="Crear Paquetes" onAction="#handleCrearPaquetes" />
+    <Button text="Crear Reservas" onAction="#handleCrearReservas" />
+</VBox>

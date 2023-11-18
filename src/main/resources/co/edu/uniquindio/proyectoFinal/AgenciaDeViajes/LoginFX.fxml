@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Pos?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane nodeOrientation="LEFT_TO_RIGHT" prefHeight="720" prefWidth="1280" style="-fx-background-color: #72C1F2" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox prefHeight="720.0" prefWidth="1280.0">
+         <children>
+            <VBox prefHeight="720.0" prefWidth="640.0">
+               <children>
+                  <HBox prefHeight="158.0" prefWidth="635.0" />
+                  <HBox prefHeight="395.0" prefWidth="635.0">
+                     <children>
+                        <VBox prefHeight="395.0" prefWidth="128.0" />
+                        <VBox prefHeight="395.0" prefWidth="379.0">
+                           <children>
+                              <ImageView fitHeight="404.0" fitWidth="420.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../../../../../Logotipo_para_agencia_de_viajes_flat_style__1_-removebg-preview.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="200.0" prefWidth="100.0" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="161.0" prefWidth="635.0" />
+               </children></VBox>
+            <VBox alignment="CENTER" prefHeight="720.0" prefWidth="651.0" spacing="20.0">
+               <children>
+                  <Label style="-fx-text-fill: white; -fx-font-size: 24;" text="Viajes sin fronteras" />
+                  <TextField maxWidth="400.0" minWidth="-Infinity" promptText="Cuenta de inicio de sesión" style="-fx-font-size: 18;" />
+                  <PasswordField maxWidth="400.0" promptText="Contraseña" style="-fx-font-size: 18;" />
+                  <HBox alignment="CENTER" spacing="10">
+                     <children>
+                        <CheckBox style="-fx-text-fill: white; -fx-font-size: 18;" text="Mantener sesión iniciada" />
+                     </children>
+                  </HBox>
+                  <Button style="-fx-background-color: #0597F2; -fx-text-fill: white; -fx-font-size: 18;" text="Iniciar Sesión" />
+                  <HBox alignment="CENTER" spacing="10">
+                     <children>
+                        <Label style="-fx-text-fill: white; -fx-font-size: 18;" text="¿Ya es miembro?" />
+                        <Button style="-fx-background-color: #2980b9; -fx-text-fill: white; -fx-font-size: 18;" text="Crear cuenta" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
