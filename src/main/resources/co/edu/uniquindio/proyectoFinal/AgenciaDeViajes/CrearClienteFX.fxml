@@ -19,7 +19,7 @@
 
 <AnchorPane prefHeight="720" prefWidth="1280" style="-fx-background-color: #72C1F2;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="your.package.name.ClientController">
    <children>
-      <HBox prefHeight="720.0" prefWidth="1280.0">
+      <HBox prefHeight="687.0" prefWidth="1280.0">
          <children>
             <VBox alignment="CENTER" prefHeight="720.0" prefWidth="640.0" spacing="20.0">
                <children>
@@ -53,5 +53,6 @@
             </VBox>
          </children>
       </HBox>
+      <Button layoutX="17.0" layoutY="668.0" style="-fx-background-color: #0597F2; -fx-text-fill: white; -fx-font-size: 18;" text="Atras" />
    </children>
 </AnchorPane>

@@ -41,15 +41,14 @@
                </children></VBox>
             <VBox alignment="CENTER" prefHeight="720.0" prefWidth="651.0" spacing="20.0">
                <children>
-                  <Label style="-fx-text-fill: white; -fx-font-size: 24;" text="Viajes sin fronteras" />
-                  <TextField maxWidth="400.0" minWidth="-Infinity" promptText="Cuenta de inicio de sesión" style="-fx-font-size: 18;" />
-                  <PasswordField maxWidth="400.0" promptText="Contraseña" style="-fx-font-size: 18;" />
+                  <Label prefHeight="54.0" prefWidth="253.0" style="-fx-text-fill: white; -fx-font-size: 24;" text="Viajes sin fronteras" />
+                  <Button maxWidth="400.0" mnemonicParsing="false" text="Ver destinos " />
+                  <Button maxWidth="400.0" mnemonicParsing="false" text="Realizar una reserva" />
+                  <Button maxWidth="400.0" mnemonicParsing="false" text="Actualizar información" />
                   <HBox alignment="CENTER" spacing="10" />
-                  <Button style="-fx-background-color: #0597F2; -fx-text-fill: white; -fx-font-size: 18;" text="Iniciar Sesión" />
                   <HBox alignment="CENTER" spacing="10">
                      <children>
-                        <Label style="-fx-text-fill: white; -fx-font-size: 18;" text="¿Ya es miembro?" />
-                        <Button style="-fx-background-color: #0597F2; -fx-text-fill: white; -fx-font-size: 18;" text="Crear cuenta" />
+                        <Button style="-fx-background-color: #0597F2; -fx-text-fill: white; -fx-font-size: 18;" text="Atras" />
                      </children>
                   </HBox>
                </children>
